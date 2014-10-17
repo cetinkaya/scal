@@ -133,7 +133,7 @@ Mo Tu We Th Fr Sa Su
 28 29 30     
 ```
 
-* Both `scal 2 2014` and `scal 2014 2` shows the calendar of February 2014, because 2014 must clearly represent the year here. How about `scal 2 12` and `scal 12 2`.  Well, in such cases (if there is ambiguity on whether a number represents a year or a month), if there are only two numbers the second number represents the year. So `scal 12 2` shows the calendar for December 2 (year 2). 
+* Both `scal 2 2014` and `scal 2014 2` show the calendar of February 2014, because 2014 must clearly represent the year here. How about `scal 2 12` and `scal 12 2`.  Well, in such cases (if there is ambiguity on whether a number represents a year or a month), if there are only two numbers the second number represents the year. So `scal 12 2` shows the calendar for December 2 (year 2). 
 
 ```sh
 $ scal 12 2
