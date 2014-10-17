@@ -9,7 +9,7 @@ scal can be used to show several months of a year (or different years) at the sa
 
 We will assume that the current month - year is October - 2014. 
 
-* Use <span style="background-color:rgb(240, 200, 200); padding: 2px">`scal april 2014`</span> or **scal April 2014** or **scal 4 2014** or **scal apr 2014** or **scal 2014 april** ... to show calendar for April 2014.
+* Use <span style="background-color:rgb(250, 100, 100); padding: 2px">`scal april 2014`</span> or **scal April 2014** or **scal 4 2014** or **scal apr 2014** or **scal 2014 april** ... to show calendar for April 2014.
 
 ```sh
 $ scal april 2014
