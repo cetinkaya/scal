@@ -9,7 +9,7 @@ scal can be used to show several months of a year (or different years) at the sa
 
 We will assume that the current month - year is October - 2014. 
 
-* Use `scal april 2014` or **scal April 2014** or **scal 4 2014** or **scal apr 2014** or **scal 2014 april** ... to show calendar for April 2014.
+* Use `scal april 2014` or `scal April 2014` or `scal 4 2014` or `scal apr 2014` or `scal 2014 april` ... to show the calendar for April 2014.
 
 ```sh
 $ scal april 2014
@@ -23,7 +23,7 @@ Mo Tu We Th Fr Sa Su
 
 ```
 
-* Use **scal 10**  or **scal october** to show the calendar for October this year. 
+* Use `scal 10`  or `scal october` to show the calendar for October this year. 
 
 ```sh
 $ scal 10
@@ -37,7 +37,7 @@ Mo Tu We Th Fr Sa Su
 
 ```
 
-* You can actually write **scal october current year** or **scal october this year** to show the calendar for October this year.
+* You can actually write `scal october current year` or `scal october this year` to show the calendar for October this year.
  
 ```sh
 $ scal october this year
@@ -51,7 +51,7 @@ Mo Tu We Th Fr Sa Su
 
 ```
 
-* Use **scal next month** to show, well, the calendar for the next month. 
+* Use `scal next month` to show, well, the calendar for the next month. 
 
 ```sh
 $ scal next month
@@ -114,7 +114,7 @@ $ scal april may june 2014, april may june 2015
 
 ### Quirks (features?)
 
-* If it is October 2014 now, **scal next month next year** shows the calendar for November 2015; **scal last month next year** shows September 2015. 
+* If it is October 2014 now, `scal next month next year` shows the calendar for November 2015; `scal last month next year` shows September 2015. 
 
 ```sh
 $ scal next month next year
@@ -140,7 +140,7 @@ Mo Tu We Th Fr Sa Su
 
 ```
 
-* Both **scal 2 2014** and **scal 2014 2** shows the calendar of February 2014, because 2014 must clearly represent the year here. How about **scal 2 12** and **scal 12 2**.  Well, in such cases (if there is ambiguity on whether a number represents a year or a month), if there are only two numbers the second number represents the year. So **scal 12 2** shows the calendar for December 2 (year 2). 
+* Both `scal 2 2014` and `scal 2014 2` shows the calendar of February 2014, because 2014 must clearly represent the year here. How about `scal 2 12` and `scal 12 2`.  Well, in such cases (if there is ambiguity on whether a number represents a year or a month), if there are only two numbers the second number represents the year. So `scal 12 2` shows the calendar for December 2 (year 2). 
 
 ```sh
 $ scal 12 2
@@ -153,7 +153,7 @@ Mo Tu We Th Fr Sa Su
 25 26 27 28 29 30 31
 ```
 
-* Note that when we use **scal 13 2**, 13 cannot be the representation of a month so it must be the year 13. **scal 13 2** shows the calendar for February 13. 
+* Note that when we use `scal 13 2`, 13 cannot be the representation of a month so it must be the year 13. `scal 13 2` shows the calendar for February 13. 
 
 ```sh
 $ scal 13 2
@@ -166,7 +166,7 @@ Mo Tu We Th Fr Sa Su
 27 28
 ```
 
-* If we have multiple numbers larger than 12, they all must represent years. But scal takes only the last one (in the order they are given) into consideration. So **scal feb 2014 2015 2016** shows the calendar for February 2016 and **scal feb 2015 2016 2014** shows the calendar for February 2014.
+* If we have multiple numbers larger than 12, they all must represent years. But scal takes only the last one (in the order they are given) into consideration. So `scal feb 2014 2015 2016` shows the calendar for February 2016 and `scal feb 2015 2016 2014` shows the calendar for February 2014.
 
 ```sh
 $ scal feb 2014 2015 2016
@@ -190,7 +190,7 @@ Mo Tu We Th Fr Sa Su
 24 25 26 27 28
 ```
 
-* To see February of 2014, 2015, and 2016, you can use **scal feb 2014, feb 2015, feb 2016**. 
+* To see February of 2014, 2015, and 2016, you can use `scal feb 2014, feb 2015, feb 2016`. 
 
 ```sh
 $ scal feb 2014, feb 2015, feb 2016
