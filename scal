@@ -75,7 +75,7 @@ july august september october november december]
   end
 end
 
-ARGV.join(" ").split(/\s*\,\s*/).each do |str|
+ARGV.join(" ").downcase.split(/\s*\,\s*/).each do |str|
   my = CalParser.new(str).parse
   if my.length == 2
     puts `cal -m #{my[1]}`
