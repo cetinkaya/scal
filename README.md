@@ -5,7 +5,7 @@ scal is a simple wrapper around cal (calendar) tool. It needs [Ruby](https://www
 
 scal can be used to show several months of a year (or different years) at the same time. What follows is a list of examples to illustrate what you can do with it. 
 
-## Examples
+### Examples
 
 We will assume that the current month - year is October - 2014. 
 
@@ -112,7 +112,7 @@ $ scal april may june 2014, april may june 2015
      ...
 ```
 
-## Quirks (features?)
+### Quirks (features?)
 
 * If it is October 2014 now, "scal next month next year" shows the calendar for "November 2015"; "scal last month next year" shows "September 2015". 
 
