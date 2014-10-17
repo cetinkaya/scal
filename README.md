@@ -7,7 +7,7 @@ scal can be used to show several months of a year (or different years) at the sa
 
 * Use "scal april 2014" or "scal April 2014" or "scal 4 2014" or "scal apr 2014" or "scal 2014 april" ... to show calendar for April 2014.
 
-{% highlight sh %}
+```sh
 $ scal april 2014
      April 2014     
 Mo Tu We Th Fr Sa Su
@@ -17,11 +17,11 @@ Mo Tu We Th Fr Sa Su
 21 22 23 24 25 26 27 
 28 29 30             
 
-{% endhighlight %}
+```
 
 * Use "scal 10"  or "scal october" to show the calendar for October of this year. 
 
-{% highlight sh %}
+```sh
 $ scal 10
     October 2014    
 Mo Tu We Th Fr Sa Su
@@ -31,11 +31,11 @@ Mo Tu We Th Fr Sa Su
 20 21 22 23 24 25 26 
 27 28 29 30 31       
 
-{% endhighlight %}
+```
 
 * You can actually write "scal october current year" or "scal october this year" to show the calendar for October current year.
  
-{% highlight sh %}
+```sh
 $ scal october this year
     October 2014    
 Mo Tu We Th Fr Sa Su
@@ -45,11 +45,11 @@ Mo Tu We Th Fr Sa Su
 20 21 22 23 24 25 26 
 27 28 29 30 31       
 
-{% endhighlight %}
+```
 
 * Use "next month" to show, well, the calendar for the next month. 
 
-{% highlight sh %}
+```sh
 $ scal next month
     November 2014   
 Mo Tu We Th Fr Sa Su
@@ -59,4 +59,4 @@ Mo Tu We Th Fr Sa Su
 17 18 19 20 21 22 23 
 24 25 26 27 28 29 30 
 
-{% endhighlight %}
+```
