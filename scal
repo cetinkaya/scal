@@ -1,0 +1,87 @@
+#!/usr/bin/env ruby
+
+# Ahmet Cetinkaya - 2014
+
+class CalParser
+  MON = %w[january february march april may june
+july august september october november december]
+  SMON = MON.map{|m| m[0, 3]}
+  ADJ = %w[current this next previous last]
+  WOR = %w[year month]
+  
+  def initialize(str)
+    @tokens = str.split(/\s+/)
+    @cur_index = -1
+  end
+
+  def get_token
+    @cur_index += 1
+    @tokens[@cur_index]
+  end
+
+  def parse_mon(my, token)
+    i = MON.index(token) || SMON.index(token)
+    my<< i + 1
+    parse(my)
+  end
+
+  def parse_adj(my, token, value = 0)
+    adj_values = {"current" => 0, "this" => 0,
+      "next" => 1,
+      "previous" => -1,
+      "last" => -1}
+
+    value += adj_values[token]
+
+    new_token = get_token
+    raise "Was expecting something after #{token}." unless new_token
+    if new_token == "month"
+      mon = Time.now.mon
+      mon += value
+      my<< mon
+      parse(my)
+    elsif new_token == "year"
+      my[0] = true # year set
+      my[1] += value
+      parse(my)
+    else
+      raise "Was expecting month/year after #{token}."
+    end
+  end
+
+  def parse_other(my, token)
+    tokeni = token.to_i
+    raise "Cannot understand #{token}." if tokeni <= 0
+    if tokeni > 12 or (tokeni < 13 and @cur_index == @tokens.length - 1 and my[0] == false and my.length == 3)
+      my[0] = true
+      my[1] = tokeni
+      parse(my)
+    else
+      my<< tokeni
+      parse(my)
+    end
+  end
+
+  def parse(my=[false, Time.now.year])
+    token = get_token
+    return my unless token
+    if MON.index(token) or SMON.index(token)
+      parse_mon(my, token)
+    elsif ADJ.index(token)
+      parse_adj(my, token)
+    else
+      parse_other(my, token)
+    end
+  end
+end
+
+ARGV.join(" ").split(/\s*\,\s*/).each do |str|
+  my = CalParser.new(str).parse
+  if my.length == 2
+    puts `cal -m #{my[1]}`
+  else
+    my.drop(2).each do |mon|
+      puts `cal -m #{mon} #{my[1]}`
+    end
+  end
+end
