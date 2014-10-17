@@ -1,7 +1,7 @@
 scal
 ====
 
-scal is a simple wrapper around cal (calendar) tool. It needs [http://www.ruby-lang.org](Ruby) to run. 
+scal is a simple wrapper around cal (calendar) tool. It needs [Ruby](http://www.ruby-lang.org) to run. 
 
 scal can be used to show several months of a year (or different years) at the same time. What follows is a list of examples to illustrate what you can do with it. We will assume the current month - year is October - 2014. 
 
