@@ -114,7 +114,7 @@ $ scal april may june 2014, april may june 2015
 
 ### Quirks (features?)
 
-* If it is October 2014 now, `scal next month next year` shows the calendar for November 2015; `scal last month next year` shows September 2015. 
+* Assuming it is October 2014 now, `scal next month next year` will show the calendar for November 2015, and `scal last month next year` will show September 2015. 
 
 ```sh
 $ scal next month next year
