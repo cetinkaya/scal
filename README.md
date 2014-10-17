@@ -20,7 +20,6 @@ Mo Tu We Th Fr Sa Su
 14 15 16 17 18 19 20 
 21 22 23 24 25 26 27 
 28 29 30             
-
 ```
 
 * Use `scal 10`  or `scal october` to show the calendar for October this year. 
@@ -34,7 +33,6 @@ Mo Tu We Th Fr Sa Su
 13 14 15 16 17 18 19 
 20 21 22 23 24 25 26 
 27 28 29 30 31       
-
 ```
 
 * You can actually write `scal october current year` or `scal october this year` to show the calendar for October this year.
@@ -48,7 +46,6 @@ Mo Tu We Th Fr Sa Su
 13 14 15 16 17 18 19 
 20 21 22 23 24 25 26 
 27 28 29 30 31       
-
 ```
 
 * Use `scal next month` to show, well, the calendar for the next month. 
@@ -62,7 +59,6 @@ Mo Tu We Th Fr Sa Su
 10 11 12 13 14 15 16 
 17 18 19 20 21 22 23 
 24 25 26 27 28 29 30 
-
 ```
 
 * It is possible to see calendars for multiple months.   
@@ -85,7 +81,6 @@ Mo Tu We Th Fr Sa Su
 16 17 18 19 20 21 22 
 23 24 25 26 27 28 29 
 30                   
-
 ```
 
 * Use a comma to separate different years.  
@@ -136,7 +131,6 @@ Mo Tu We Th Fr Sa Su
 14 15 16 17 18 19 20 
 21 22 23 24 25 26 27 
 28 29 30     
-
 ```
 
 * Both `scal 2 2014` and `scal 2014 2` shows the calendar of February 2014, because 2014 must clearly represent the year here. How about `scal 2 12` and `scal 12 2`.  Well, in such cases (if there is ambiguity on whether a number represents a year or a month), if there are only two numbers the second number represents the year. So `scal 12 2` shows the calendar for December 2 (year 2). 
@@ -216,5 +210,4 @@ Mo Tu We Th Fr Sa Su
 15 16 17 18 19 20 21 
 22 23 24 25 26 27 28 
 29
-
 ```
