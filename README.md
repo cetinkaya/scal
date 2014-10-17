@@ -64,7 +64,7 @@ Mo Tu We Th Fr Sa Su
 * It is possible to see calendars for multiple months.   
 
 ```sh
-$ scal april may june
+$ scal april june
     April 2014     
 Mo Tu We Th Fr Sa Su
     1  2  3  4  5  6 
