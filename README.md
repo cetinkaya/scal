@@ -180,7 +180,7 @@ Mo Tu We Th Fr Sa Su
 ```
 
 ```sh
-$ scal feb 2015 2016 2014                                                                                           
+$ scal feb 2015 2016 2014
     February 2014   
 Mo Tu We Th Fr Sa Su
                 1  2 
