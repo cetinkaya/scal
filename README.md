@@ -47,7 +47,7 @@ Mo Tu We Th Fr Sa Su
 
 ```
 
-* Use "next month" to show, well, the calendar for the next month. 
+* Use "scal next month" to show, well, the calendar for the next month. 
 
 ```sh
 $ scal next month
@@ -60,3 +60,36 @@ Mo Tu We Th Fr Sa Su
 24 25 26 27 28 29 30 
 
 ```
+
+* It is possible to see calendars for multiple months.   
+
+```sh
+$ scal april may june
+    April 2014     
+Mo Tu We Th Fr Sa Su
+    1  2  3  4  5  6 
+ 7  8  9 10 11 12 13 
+14 15 16 17 18 19 20 
+21 22 23 24 25 26 27 
+28 29 30             
+                     
+      June 2014     
+Mo Tu We Th Fr Sa Su
+                   1 
+ 2  3  4  5  6  7  8 
+ 9 10 11 12 13 14 15 
+16 17 18 19 20 21 22 
+23 24 25 26 27 28 29 
+30                   
+
+
+```
+
+* Use a comma to separate different years.  
+
+```sh
+$ scal april may june 2014, april may june 2015
+    ...
+
+```
+
