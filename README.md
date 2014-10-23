@@ -7,7 +7,7 @@ scal can be used for displaying calendars for several months of a year (or diffe
 
 scal needs the command line utility *cal* and [Ruby](https://www.ruby-lang.org) to run.
 
-scal passes options of the form -o or --option to cal as they are given. 
+scal passes options of the form -o or --option to *cal*. 
 
 What follows is a list of examples to illustrate what you can do with scal. 
 
