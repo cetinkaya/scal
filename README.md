@@ -5,7 +5,9 @@ scal is a simple wrapper around *cal* tool, which is used for displaying calenda
 
 scal can be used for displaying calendars for several months of a year (or different years). The description for the month(s)-year(s) is given as arguments to scal. For instance, `scal jan feb 2015, jan feb 2016` shows the calendars for January and February of 2015 and 2016. scal understands expressions like "april next year" and "last month", for instance, `scal next month` will display next month's calendar. scal also doesn't care (well, most of the time) about the order you put the year and the numeric value for the month: both `scal 1 2015` and `scal 2015 1` will display the calendar for January 2015.
 
-scal needs the command line utility *cal* and [Ruby](https://www.ruby-lang.org) to run. 
+scal needs the command line utility *cal* and [Ruby](https://www.ruby-lang.org) to run.
+
+scal passes options of the form -o or --option to cal as they are given. 
 
 What follows is a list of examples to illustrate what you can do with scal. 
 
