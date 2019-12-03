@@ -8,7 +8,7 @@ july august september october november december]
   SMON = MON.map{|m| m[0, 3]}
   ADJ = %w[current this next previous last]
   WOR = %w[year month]
-  
+
   def initialize(str)
     @tokens = str.split(/\s+/)
     @cur_index = -1
@@ -35,17 +35,23 @@ july august september october november december]
 
     new_token = get_token
     raise "Was expecting something after #{token}." unless new_token
-    if new_token == "month"
-      mon = Time.now.mon
-      mon += value
-      my<< mon
-      parse(my)
-    elsif new_token == "year"
-      my[0] = true # year set
-      my[1] += value
-      parse(my)
+    if ADJ.index(new_token) # e.g., next next
+      parse_adj(my, new_token, value)
     else
-      raise "Was expecting month/year after #{token}."
+      if new_token == "month"
+        mon = Time.now.mon
+        mon += value
+        my[1] += ((mon - 1) / 12.0).floor # if mon == 13, change to next year
+        mon = ((mon - 1) % 12) + 1 # if mon == 13, change to january
+        my<< mon
+        parse(my)
+      elsif new_token == "year"
+        my[0] = true # year set
+        my[1] += value
+        parse(my)
+      else
+        raise "Was expecting month/year after #{token}."
+      end
     end
   end
 
